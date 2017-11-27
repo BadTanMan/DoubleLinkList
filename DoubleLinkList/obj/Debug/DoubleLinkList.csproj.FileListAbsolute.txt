@@ -1,0 +1,9 @@
+E:\Tafe\Diploma Semester 2\Monday\C#\DoubleLinkList\DoubleLinkList\bin\Debug\DoubleLinkList.exe.config
+E:\Tafe\Diploma Semester 2\Monday\C#\DoubleLinkList\DoubleLinkList\bin\Debug\DoubleLinkList.exe
+E:\Tafe\Diploma Semester 2\Monday\C#\DoubleLinkList\DoubleLinkList\bin\Debug\DoubleLinkList.pdb
+E:\Tafe\Diploma Semester 2\Monday\C#\DoubleLinkList\DoubleLinkList\obj\Debug\DoubleLinkList.csprojResolveAssemblyReference.cache
+E:\Tafe\Diploma Semester 2\Monday\C#\DoubleLinkList\DoubleLinkList\obj\Debug\DoubleLinkList.exe
+E:\Tafe\Diploma Semester 2\Monday\C#\DoubleLinkList\DoubleLinkList\obj\Debug\DoubleLinkList.pdb
+G:\TAFE\Assessments\C#\Assignment 1 - Linked List Binary Trees\DoubleLinkList\DoubleLinkList\bin\Debug\DoubleLinkList.exe.config
+G:\TAFE\Assessments\C#\Assignment 1 - Linked List Binary Trees\DoubleLinkList\DoubleLinkList\obj\Debug\DoubleLinkList.exe
+G:\TAFE\Assessments\C#\Assignment 1 - Linked List Binary Trees\DoubleLinkList\DoubleLinkList\obj\Debug\DoubleLinkList.pdb
