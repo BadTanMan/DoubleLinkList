@@ -37,15 +37,15 @@ namespace DoubleLinkList
         public void addHead(string data)
         {
             //prev node set to null (due to being head node)
-            Node tmp = new Node(data, head, null);
+            Node temp = new Node(data, head, null);
             if (head != null)
             {
-                head.prev = tmp;
+                head.prev = temp;
             }
-            head = tmp;
+            head = temp;
             if (tail == null)
             {
-                tail = tmp;
+                tail = temp;
             }
             //increment list
             size++;
@@ -53,19 +53,19 @@ namespace DoubleLinkList
 
         public void addLast(string element)
         {
-            Node tmp = new Node(element, null, tail);
+            Node temp = new Node(element, null, tail);
             if (tail != null)
             {
-                tail.next = tmp;
+                tail.next = temp;
             }
             else
             {
-                tail.prev = tmp;
+                tail.prev = temp;
             }
-            tail = tmp;
+            tail = temp;
             if (head == null)
             {
-                head = tmp;
+                head = temp;
             }
             size++;
         }
@@ -74,17 +74,17 @@ namespace DoubleLinkList
         {
             Console.WriteLine("Enter node to search: ");
             string userSearch = Console.ReadLine();
-            Node tmp = head;
-            while (tmp != null)
+            Node temp = head;
+            while (temp != null)
             {
-                if (userSearch == tmp.data)
+                if (userSearch == temp.data)
                 {
-                    Console.WriteLine("Node found: " + tmp.data);
-                    tmp = null;
+                    Console.WriteLine("Node found: " + temp.data);
+                    temp = null;
                 }
                 else
                 {
-                    tmp = tmp.next;
+                    temp = temp.next;
                 }
             }
         }
@@ -93,20 +93,20 @@ namespace DoubleLinkList
         {
             Console.WriteLine("Enter node to replace: ");
             string userSearch = Console.ReadLine();
-            Node tmp = head;
-            while (tmp != null)
+            Node temp = head;
+            while (temp != null)
             {
-                if (userSearch == tmp.data)
+                if (userSearch == temp.data)
                 {
                     Console.WriteLine("Enter replacement value for node: ");
                     string replacement = Console.ReadLine();
-                    tmp.data = replacement;
-                    Console.WriteLine("New node value: " + tmp.data);
-                    tmp = null;
+                    temp.data = replacement;
+                    Console.WriteLine("New node value: " + temp.data);
+                    temp = null;
                 }
                 else
                 {
-                    tmp = tmp.next;
+                    temp = temp.next;
                 }
             }
         }
@@ -114,28 +114,28 @@ namespace DoubleLinkList
         public void iterateForward()
         {
             Console.WriteLine("iterating forward..");
-            Node tmp = head;
-            while (tmp != null)
+            Node temp = head;
+            while (temp != null)
             {
-                Console.WriteLine(tmp.data);
-                tmp = tmp.next;
+                Console.WriteLine(temp.data);
+                temp = temp.next;
             }
         }
 
         public void iterateBackward()
         {
             Console.WriteLine("iterating backwards..");
-            Node tmp = tail;
-            while (tmp != null)
+            Node temp = tail;
+            while (temp != null)
             {
-                Console.WriteLine(tmp.data);
-                tmp = tmp.prev;
+                Console.WriteLine(temp.data);
+                temp = temp.prev;
             }
         }
 
         public string removeFirst()
         {
-            Node tmp = head;
+            Node temp = head;
             if (noHeads == true)
             {
                 Console.WriteLine("Can't Delete anymore!");
@@ -146,23 +146,23 @@ namespace DoubleLinkList
                 if (head.next == null)
                 {
                     noHeads = true;
-                    Console.WriteLine("deleted: " + tmp.data);
+                    Console.WriteLine("deleted: " + temp.data);
                     Console.WriteLine("Can't delete anymore!");
                 }
                 else
                 {
                     head.prev = null;
                     size--;
-                    Console.WriteLine("deleted: " + tmp.data);
+                    Console.WriteLine("deleted: " + temp.data);
                 }
             }
-            return tmp.data;
+            return temp.data;
         }
 
         //remove last link list entry
         public string removeLast()
         {
-            Node tmp = tail;
+            Node temp = tail;
             if (noTails == true)
             {
                 Console.WriteLine("Can't Delete anymore!");
@@ -174,17 +174,17 @@ namespace DoubleLinkList
                 if (tail.prev == null)
                 {
                     noTails = true;
-                    Console.WriteLine("deleted: " + tmp.data);
+                    Console.WriteLine("deleted: " + temp.data);
                     Console.WriteLine("Can't Delete anymore!");
                 }
                 else
                 {
                     tail.next = null;
                     size--;
-                    Console.WriteLine("deleted: " + tmp.data);
+                    Console.WriteLine("deleted: " + temp.data);
                 }
             }
-            return tmp.data;
+            return temp.data;
         }
     }
 }

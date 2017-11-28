@@ -15,13 +15,14 @@ namespace DoubleLinkList
         {
             Tree newTree;
             bool quit = false;
+
             //create list and add nodes
-            DoublyLinkedListImpl<int> dll = new DoublyLinkedListImpl<int>();
-            dll.addHead("Unit 5, 19 Baxter St");
-            dll.addHead("1 Jerramunga Rd");
-            dll.addLast("3 Sophtis Cres");
-            dll.addLast("4 Julie Rd");
-            dll.addLast("5 EndofList St");
+            DoublyLinkedListImpl<int> myLinkList = new DoublyLinkedListImpl<int>();
+            myLinkList.addHead("Unit 5, 19 Baxter St");
+            myLinkList.addHead("1 Jerramunga Rd");
+            myLinkList.addLast("3 Sophtis Cres");
+            myLinkList.addLast("4 Julie Rd");
+            myLinkList.addLast("5 EndofList St");
 
             while(!quit)
             {
@@ -32,23 +33,23 @@ namespace DoubleLinkList
                 Console.WriteLine();
                 if (input == "search")
                 {
-                    dll.findNode();
+                    myLinkList.findNode();
                 }
                 else if (input == "delete head")
                 {
-                    dll.removeFirst();
+                    myLinkList.removeFirst();
                 }
                 else if (input == "delete tail")
                 {
-                    dll.removeLast();
+                    myLinkList.removeLast();
                 }
                 else if (input == "replace")
                 {
-                    dll.replaceNode();
+                    myLinkList.replaceNode();
                 }
                 else if (input == "show")
                 {
-                    dll.iterateForward();
+                    myLinkList.iterateForward();
                 }
                 else if (input == "create binary tree")
                 {
@@ -80,25 +81,21 @@ namespace DoubleLinkList
                 }
                 else if (input == "show reverse")
                 {
-                    dll.iterateBackward();
-                }
-                else if (input == "back")
-                {
-                    dll.iterateBackward();
+                    myLinkList.iterateBackward();
                 }
                 else if (input == "add head")
                 {
                     Console.Write("Enter in value to add: ");
                     string headinput;
                     headinput = Console.ReadLine();
-                    dll.addHead(headinput);
+                    myLinkList.addHead(headinput);
                 }
                 else if (input == "add tail")
                 {
                     Console.Write("Enter in value to add: ");
                     string headinput;
                     headinput = Console.ReadLine();
-                    dll.addLast(headinput);
+                    myLinkList.addLast(headinput);
                 }
                 else if (input == "quit")
                 {
